@@ -11,7 +11,7 @@ public class EmployeePayrollJDBC {
 	public static void main(String[] args) {
 		String jdbcURL = "jdbc:mysql://localhost:3306/payroll_service?useSSL=false";
 		String userName = "root";
-		String password = "Sourabhharale@143";
+		String password = "Prem@1234";
 		Connection connection;
 		try {
 			//forName method contains static block which creates the Driver class object and register automatically.
