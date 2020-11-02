@@ -1,5 +1,6 @@
 package com.blz.employeePayrollJDBC;
 
+
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
@@ -8,9 +9,9 @@ import java.util.Enumeration;
 public class EmployeePayrollJDBC {
 
 	public static void main(String[] args) {
-		String jdbcURL = "jdbc:mysql://localhost:3306/payroll_service";
+		String jdbcURL = "jdbc:mysql://localhost:3306/payroll_service?useSSL=false";
 		String userName = "root";
-		String password = "Prem@1234";
+		String password = "Sourabhharale@143";
 		Connection connection;
 		try {
 			//forName method contains static block which creates the Driver class object and register automatically.
@@ -20,6 +21,7 @@ public class EmployeePayrollJDBC {
 			throw new IllegalStateException("Cannot find driver in classpath!", e);
 		}
 		listDrivers();
+		//creating connection to the database
 		try {
 			System.out.println("Connecting to database: " + jdbcURL);
 			connection = DriverManager.getConnection(jdbcURL, userName, password);
